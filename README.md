@@ -142,3 +142,60 @@ Ahora solo hay modificar el código del HomeActivity para que cada vez que el us
 items del bottomnavigation se cambie entre los diferentes fragments:
 
 ![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/dd932969-293f-455b-9139-192e1f7a88b7)
+
+
+-------------------------------------------------------
+
+EJERCICIO 04
+
+Añade un Fragment mas que se llame API y sigue el tutorial (para la parte del consumo de la API) proporcionado para
+consumir un API con android(en esta entrega no tendrás que reflejar los resultado en la interfaz gráfica, solo en el log).
+Por otro lado crea un microservicio con una sola entidad.
+
+Primero se crea la API para el proyecto el cúal utilizaremos para consumir en la Adroid App.
+
+En la app se crea un fragmento que llamaremos apiFragment donde mostraremos los productos en una listView, en el código va lo
+siguiente:
+
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/74acfc3e-10cc-4522-9db2-28fb5dfa2460)
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/dfbd4928-e4cd-4a18-a352-34527655ce62)
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/51009561-263e-487f-8c9b-7606912d2783)
+
+
+En el layout donde está el diseño hacemos lo siguiente:
+
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/67930608-142c-472f-af55-62717e67f9b3)
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/ad6b25c4-1b63-46cc-9d0c-c7369d62a04d)
+
+
+Además se crea otro layout donde se diseñará como se mostrará los productos:
+
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/3159a616-ee3c-47c1-83a5-bbbd28321dd2)
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/acc46c46-d795-4cc8-b022-46b5e690cc62)
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/80916513-1f7c-4381-a3ed-738bf639b73f)
+
+
+Ahora en el Gradle Scripts hay que importar algunas librerias para que se pueda consumir la API:
+
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/80788db4-6279-4e47-aee5-7244077290c9)
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/f16746c5-71ca-421d-a0fa-f7eedd474d35)
+
+
+Ahora se crea una carpeta en la que se meterá la clase de la API utiliza:
+
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/28e96243-0bcb-4942-b218-02dee43eba86)
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/dd9ffc7b-e62c-4ae9-9441-e84793040066)
+
+
+Ahora se añade otra carpeta con una Interface en la que se pondrá el método para mostrar la lista:
+
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/90369dd7-4132-4ff2-8288-1ffe2b573c51)
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/09b0dfa6-86e1-4e58-be97-fba41ecb7636)
+
+
+Y finalmente se añade otra carpeta de ProductorAdapter en la que se añaderá todos los métodos para mostrar
+la información necesaria:
+
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/8221e46d-97ba-4850-9275-45332383aafb)
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/c6376e4b-ada5-4610-8a6e-b8526041139f)
+![image](https://github.com/mmruano/MoragriegaRuanoM01/assets/146729468/b6a7bb0e-243d-41dd-baac-762a6c18437b)
